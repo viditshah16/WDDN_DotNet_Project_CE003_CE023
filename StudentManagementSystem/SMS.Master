@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SMS.master.cs" Inherits="StudentManagementSystem.SMS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css"/>
+    <style>
+        h5{
+            color:greenyellow;
+        }
+    </style>
+    
+</head>
+<body style="background-image:url('Static/14.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+    <form id="form1" runat="server">
+        <center>
+        <div>
+            
+                
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    
+      <h4><asp:Label class="navbar-brand" ID="LabelUserLogin" runat="server" Text="Label"></asp:Label></h4>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+          
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/AdminPage.aspx"><h4>Admin</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/CoursePage.aspx"><h4>Course</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/TutorPage.aspx"><h4>Teacher</h4></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" href="/StudentPage.aspx"><h4>Student</h4></a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="/Details.aspx"><h4>Details</h4></a>
+        </li>
+        <li class="nav-item">
+          <h4><asp:LinkButton class="nav-link active" ID="LinkLogout" runat="server" OnClick="LinkLogout_Click">Logout</asp:LinkButton></h4>
+        </li>
+          
+      </ul>
+    </div>
+  </div>
+</nav>
+            
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </center>
+    </form>
+</body>
+</html>
